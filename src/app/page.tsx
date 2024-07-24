@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 font-mono">
+    <main className="flex min-h-screen flex-col items-center justify-between p-12 font-mono">
       <h1 className="text-4xl font-extrabold">Shagun0x00</h1>
       <div className="text-2xl">
         <span>Still in development. Check back soon... </span>
