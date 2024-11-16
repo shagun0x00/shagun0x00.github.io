@@ -1,3 +1,241 @@
-<h1>
-    hello
-</h1>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="section" id="section1-container">
+        <div class="section-text">
+            <div id="section1">
+                <p id="intro1"></p>
+            </div>
+<!--             
+            <h1>Hey!</h1>
+            <p>I'm Shagun Sharma</p> -->
+        </div>
+        <div class="section-image">
+            <img src="./image_transparent_Craiyon (5).png" alt="..." style="height: 5in;">
+        </div>
+    </div>
+    <div class="section" style="background-color: #192c3f;" id="section2-container">
+        <div class="section-text">
+            <div id="section2">
+                <p id="intro2"></p>
+            </div>
+<!--             
+            <h1>Hey!</h1>
+            <p>I'm Shagun Sharma</p> -->
+        </div>
+        <div class="section-image">
+            <img src="https://cdn.pixabay.com/photo/2023/09/25/20/38/lisbon-8275994_640.jpg" alt="...">
+        </div>
+    </div>
+    <div class="section" id="section3-container">
+        <div class="section-text">
+            <div id="section3">
+                <p id="intro3"></p>
+            </div>
+<!--             
+            <h1>Hey!</h1>
+            <p>I'm Shagun Sharma</p> -->
+        </div>
+        <div class="section-image">
+            <img src="https://cdn.pixabay.com/photo/2023/09/25/20/38/lisbon-8275994_640.jpg" alt="...">
+        </div>
+    </div>
+    <div class="section" id="section4-container">
+        <div class="section-text">
+            <div id="section4">
+                <p id="intro4"></p>
+            </div>
+<!--             
+            <h1>Hey!</h1>
+            <p>I'm Shagun Sharma</p> -->
+        </div>
+        <div class="section-image">
+            <img src="https://cdn.pixabay.com/photo/2023/09/25/20/38/lisbon-8275994_640.jpg" alt="...">
+        </div>
+    </div>
+    <div class="section" id="section5-container">
+        <div class="section-text">
+            <div id="section5">
+                <p id="intro5"></p>
+            </div>
+<!--             
+            <h1>Hey!</h1>
+            <p>I'm Shagun Sharma</p> -->
+        </div>
+        <div class="section-image">
+            <img src="https://cdn.pixabay.com/photo/2023/09/25/20/38/lisbon-8275994_640.jpg" alt="...">
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1920&amp;height=500&amp;hl=en&amp;q=Bahra University&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://sprunkin.com/">Sprunki Incredibox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:500px;}.gmap_iframe {width:100%!important;height:500px!important;}</style></div>
+</footer>
+<script>
+    // Function to check if an element is in the viewport
+    function isInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+    }
+
+
+
+    // Add scroll listener
+    document.addEventListener('scroll', function() {
+        const section = document.getElementById('section1');
+        if (isInViewport(section)) {
+            startTyping1();
+            // Remove the event listener to prevent retriggering
+            document.removeEventListener('scroll', arguments.callee);
+        }
+    });
+    function startTyping1() {
+        new Typed('#intro1', {
+            strings: ["<h1>Hey!</h1>", "<p>I'm Shagun Sharma</p>"], // Add your strings
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    }
+
+
+    // Add scroll listener
+    document.addEventListener('scroll', function() {
+        const section = document.getElementById('section2');
+        if (isInViewport(section)) {
+            startTyping2();
+            // Remove the event listener to prevent retriggering
+            document.removeEventListener('scroll', arguments.callee);
+        }
+    });
+    function startTyping2() {
+        new Typed('#intro2', {
+            strings: ["<h1>Hey!</h1>", "<p>I'm Shagun Sharma</p>"], // Add your strings
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    }
+
+    // Add scroll listener
+    document.addEventListener('scroll', function() {
+        const section = document.getElementById('section2');
+        if (isInViewport(section)) {
+            startTyping2();
+            // Remove the event listener to prevent retriggering
+            document.removeEventListener('scroll', arguments.callee);
+        }
+    });
+    function startTyping2() {
+        new Typed('#intro2', {
+            strings: ["<h1>Hey!</h1>", "<p>I'm Shagun Sharma</p>"], // Add your strings
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    }
+
+    // Add scroll listener
+    document.addEventListener('scroll', function() {
+        const section = document.getElementById('section3');
+        if (isInViewport(section)) {
+            startTyping3();
+            // Remove the event listener to prevent retriggering
+            document.removeEventListener('scroll', arguments.callee);
+        }
+    });
+    function startTyping3() {
+        new Typed('#intro3', {
+            strings: ["<h1>Hey!</h1>", "<p>I'm Shagun Sharma</p>"], // Add your strings
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    }
+
+    // Add scroll listener
+    document.addEventListener('scroll', function() {
+        const section = document.getElementById('section4');
+        if (isInViewport(section)) {
+            startTyping4();
+            // Remove the event listener to prevent retriggering
+            document.removeEventListener('scroll', arguments.callee);
+        }
+    });
+    function startTyping4() {
+        new Typed('#intro4', {
+            strings: ["<h1>Hey!</h1>", "<p>I'm Shagun Sharma</p>"], // Add your strings
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    }
+
+    // Add scroll listener
+    document.addEventListener('scroll', function() {
+        const section = document.getElementById('section5');
+        if (isInViewport(section)) {
+            startTyping5();
+            // Remove the event listener to prevent retriggering
+            document.removeEventListener('scroll', arguments.callee);
+        }
+    });
+
+    function startTyping5() {
+        new Typed('#intro5', {
+            strings: ["<h1>Hey!</h1>", "<p>I'm Shagun Sharma</p>"], // Add your strings
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    }
+
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".section");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate"); // Add animation class
+                    observer.unobserve(entry.target); // Stop observing after animation
+                }
+            });
+        },
+        { threshold: 0.2 } // Trigger when 20% of the section is visible
+    );
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    // Immediately check all sections visible in the viewport
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            section.classList.add("animate"); // Trigger animation for already visible sections
+        }
+    });
+});
+
+
+</script>
+
+
+</body>
+</html>

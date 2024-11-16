@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.section{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.7s ease-out; 
+  overflow: hidden;
+}
+
+.container{
+  overflow: auto;
+}
+
+.section.animate {
+  opacity: 1;
+  transform: translateX(0); /* Slide into place */
+}
+
+@media screen and (min-width: 700px) {
+  .section {
+    padding: 200px;
+  }
+}
+
+h1{
+  font-size: 1.2in;
+}
+
+.section-text p{
+  font-size: .5in;
+}
+/* apply style if element number is even*/
+.section:nth-child(even) {
+  background: #f1f1f1;
+  flex-direction: row-reverse;
+}
+
+.section:nth-child(odd) {
+  background-color: #0d011e;
+  color: white;
+}
+
+#section1-container{
+  background-image: url("./image_transparent_Craiyon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#section2-container{
+  background-image: url("./image_transparent_Craiyon\ \(1\).png");
+  background-position: center;
+  background-size: 90lvh;
+  background-repeat: no-repeat;
+}
+
+#section3-container{
+  background-image: url("./image_transparent_Craiyon\ \(2\).png");
+  background-position: center;
+  /* background-size: 90lvh; */
+  background-repeat: no-repeat;
+}
+#section4-container{
+  background-color: #192c3f;
+  background-image: url("./image_transparent_Craiyon\ \(3\).png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#section5-container{
+  background-image: url("./image_transparent_Craiyon\ \(4\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
